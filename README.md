@@ -12,6 +12,6 @@ sudoku is a 9x9 matrix of integers.
 
 A sudoku is solved correctly, if:
 
-*Each row contains the numbers from 1 do 9 without repeating a number
-*Each column contains the numbers from 1 to 9, without repeating a number
-*All 3x3 subgrids contains the numbers from 1 to 9, without repeating a number
+* Each row contains the numbers from 1 do 9 without repeating a number
+* Each column contains the numbers from 1 to 9, without repeating a number
+* All 3x3 subgrids contains the numbers from 1 to 9, without repeating a number
