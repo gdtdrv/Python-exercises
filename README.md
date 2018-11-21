@@ -1,5 +1,7 @@
 # Python-exercises
 
+I am learing OOP via Python and here I have published some of the problems I have solved. Here are the problem descriptions:
+
 ## Largest Palindrom
 
 Implement a function get_largest_palindrome(n), which return the largest palindrome smaller than n. Given number n can also be palindrome.
@@ -29,6 +31,3 @@ Example:
 
 Implement a queue without using the append() method.
 
- ## Stack 
-
-Implement a stack without using the append() method.
