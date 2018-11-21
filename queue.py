@@ -8,15 +8,14 @@ class Queue:
         for each in self.queue:
             return (str(self.queue))
 
-    # Adding elements to stack
+    # Adding elements to queue
     def push(self, data):
         self.queue=[data,*self.queue]
 
-    # Removing elements from a stack
+    # Removing elements from a queue
     def pop(self):
         last_element= len(self.queue) -1
         self.queue=self.queue[:last_element]
-        print(len(self.queue))
 
     def IsEmpty(self):
         if len(self.queue)==0:
