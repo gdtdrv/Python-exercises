@@ -36,4 +36,4 @@ class Poly:
         return '{}*x^{}'.format(self.new_m_coef,self.new_p_coef)
 
 if __name__ == "__main__":
-    print(Separate_Polynomials('x^5 + 10*x^3 + 3'))
+    print(Separate_Polynomials('x^5 + 10*x^3'))
