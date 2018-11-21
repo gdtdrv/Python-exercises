@@ -15,3 +15,10 @@ A sudoku is solved correctly, if:
 * Each row contains the numbers from 1 do 9 without repeating a number
 * Each column contains the numbers from 1 to 9, without repeating a number
 * All 3x3 subgrids contains the numbers from 1 to 9, without repeating a number
+
+## Derivatives
+
+Implement a program that takes a string, representing a polynomial function and returns / prints the derivative of that polynomial function.
+Example: 
+  f(x) = 2x ^ 3 + 3x + 1
+  f'(x) = 6x^2 + 3
