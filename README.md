@@ -25,3 +25,10 @@ Example:
   
   f'(x) = 6x^2 + 3
   
+ ## Queue
+
+Implement a queue without using the append() method.
+
+ ## Stack 
+
+Implement a stack without using the append() method.
