@@ -1,6 +1,6 @@
 # Python-exercises
 
-I am learing OOP via Python and here I have published some of the problems I have solved. Here are the problem descriptions:
+I am learning OOP via Python and here I have published some of the problems I have solved. Here are the problem descriptions:
 
 ## Largest Palindrom
 
