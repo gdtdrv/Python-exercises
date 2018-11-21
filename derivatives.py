@@ -23,17 +23,17 @@ class Poly:
         self.p_coef = p_coef
         self.new_m_coef = self.m_coef*self.p_coef
         self.new_p_coef = self.p_coef-1
-
+    
     def derivative(self):
         if self.new_m_coef==1 and self.new_p_coef==1:
             return 'x'
+        if self.new_p_coef == 0:
+            return '{}'.format(self.new_m_coef)
         if self.new_m_coef==1:
             return 'x^{}'.format(self.new_p_coef)
         if self.new_p_coef==1:
             return '{}*x'.format(self.new_m_coef)
-        if self.new_p_coef==0:
-            return '{}'.format(self.new_m_coef)
-        return '{}*x^{}'.format(self.new_m_coef,self.new_p_coef)
 
+        return '{}*x^{}'.format(self.new_m_coef,self.new_p_coef)
 if __name__ == "__main__":
     print(Separate_Polynomials('x^5 + 10*x^3'))
