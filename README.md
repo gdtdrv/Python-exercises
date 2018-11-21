@@ -21,7 +21,7 @@ A sudoku is solved correctly, if:
 Implement a program that takes a string, representing a polynomial function and returns / prints the derivative of that polynomial function.
 Example: 
 
-  f(x) = 2x ^ 3 + 3x + 1
+  f(x) = 2x^3 + 3x + 1
   
   f'(x) = 6x^2 + 3
   
