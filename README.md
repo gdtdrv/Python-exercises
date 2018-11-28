@@ -31,3 +31,6 @@ Example:
 
 Implement a queue without using the append() method.
 
+## Linked List
+
+Implement a linked list in python with pop, remove and add_element methods.
