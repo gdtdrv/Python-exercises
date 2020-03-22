@@ -6,10 +6,10 @@ class Song:
         self.title = title
         self.artist = artist
         self.album = album
-        self._length = length
+        self.len = length
 
     def __str__(self):
-        return ('{} - {} from {} - {}'.format(self.artist, self.title, self.album, self.length))
+        return ('{} - {} from {} - {}'.format(self.artist, self.title, self.album, self.len))
 
     def __eq__(self, other):
         return(
@@ -17,25 +17,26 @@ class Song:
         self.title == other.title and
         self.artist == other.artist and
         self.album  == other.album and
-        self._length == other._length
+        self.len == other.len
         )
 
     def length(self, seconds = False, minutes = False, hours = False):
 
-        total_lenght = self._length.split(':')
+        total_lenght = self.len.split(':')
 
         if seconds:
-            return total_lenght[0]
+            return str(total_lenght[-1])
         elif minutes:
-            return total_lenght[1]
+            return str(total_lenght[-2])
         elif hours:
             if len(total_lenght)==2: raise Exception('No hours given')
-            else: return total_lenght[2]
+            else: return str(total_lenght[-3])
 print('alala')
 
-a = Song('odrin', 'Beatles', 'Yellow Sub', '22:40')
+a = Song('odrin', 'Beatles', 'Yellow Sub', '11:22:40')
 
-a.length(hours = True)
+print(a.length(hours = True))
+
 print(str(a))
 
 
