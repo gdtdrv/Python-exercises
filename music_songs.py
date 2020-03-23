@@ -24,16 +24,21 @@ class Song:
 
         total_lenght = self.len.split(':')
 
+        if len(total_lenght)==2:
+            real_length = int(total_lenght[-1]) + int(total_lenght[-2])*60
+        else:
+            real_length = int(total_lenght[-1]) + int(total_lenght[-2]) * 60 + int(total_lenght[-3]) * 3600
+
         if seconds:
-            return str(total_lenght[-1])
+            return real_length
         elif minutes:
-            return str(total_lenght[-2])
+            return real_length / 60
         elif hours:
             if len(total_lenght)==2: raise Exception('No hours given')
-            else: return str(total_lenght[-3])
+            else: return real_length / 3600
 print('alala')
 
-a = Song('odrin', 'Beatles', 'Yellow Sub', '11:22:40')
+a = Song('Hey Jude', 'the Beatles', 'Hey Jude', '00:10:40')
 
 print(a.length(hours = True))
 
