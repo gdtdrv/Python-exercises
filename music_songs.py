@@ -8,7 +8,7 @@ class Song:
         self.album = album
         self.len = length
 
-    def __str__(self):
+    def __repr__(self):
         return ('{} - {} from {} - {}'.format(self.artist, self.title, self.album, self.len))
 
     def __eq__(self, other):
